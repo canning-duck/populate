@@ -15,8 +15,8 @@ func main() {
 	var (
 		err error
 		p   = flag.String("p", "", "filename prefix (default random)")
-		n   = flag.Int("n", 260721, "number of files")
-		s   = flag.Int("s", 1024, "file size in bytes")
+		n   = flag.Int("n", 0, "number of files")    // 260721
+		s   = flag.Int("s", 0, "file size in bytes") // 1024
 		r   = flag.Bool("r", false, "randomize file contents (default empty)")
 		d   = flag.Int("d", 0, "number of directories")
 	)
